@@ -76,11 +76,11 @@ printCoursesOnScreen = (title, desc, provider, level, duration) => {
        //
         const course =`
             <li class="govuk-body"> 
+            <div class="govuk-!-margin-bottom-1"><span class="govuk-hint">${provider}</span></div>
             <div class="govuk-!-margin-bottom-1"><h2 class="govuk-heading-m"><a href class="govuk-link">${title}</a></h2></div>
             <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
-            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Provider : </span>${provider}</div>
             <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Level : </span>${level}</div>
-            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Duration : </span>${duration}</div>
+            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Study time : </span>${duration}</div>
             </li>
             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--l">`
         courseList.innerHTML += course;
