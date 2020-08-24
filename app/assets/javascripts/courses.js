@@ -166,7 +166,6 @@ filterCourses = (level, category) => {
     const result = data.filter(course => course.Level === level);
     if(category) {
         const level2 = result.filter(course => course.Category === category);
-
     }
     clearCourses();
     loadCourses(result);
@@ -175,9 +174,9 @@ filterCourses = (level, category) => {
 filterCategory = (category) => {
     const result = data.filter(course => course.Subject.includes(category));
 
-    //clearCourses();
     loadCourses(result);
 }
+
 const filterButton = document.getElementsByClassName('filter-button')[0];
 const resetButton = document.getElementsByClassName('reset-button')[0];
 const categoryFilterButton = document.getElementsByClassName('category-filter-button')[0];
@@ -187,6 +186,7 @@ resetButton.addEventListener('click', (e)=>{
     clearCourses();
     loadCourses(data);
 })
+
 if(filterButton) {
     filterButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -197,6 +197,7 @@ if(filterButton) {
 }
 
 categoryFilterButton.addEventListener('click', (e)=>{
+    const content = document.getElementsByClassName('govuk-grid-column-one-half')[0];
     e.preventDefault();
     const selectedValues = [];
     const selectedItem = document.querySelectorAll('.govuk-checkboxes__input:checked');
@@ -204,32 +205,41 @@ categoryFilterButton.addEventListener('click', (e)=>{
         selectedValues.push(x.value);
     }
     clearCourses();
-    for (let x of selectedValues) {
-        filterCategory(x);
+    if (selectedValues.length === 0) {
+        loadCourses(data);
     }
-
-    console.log(selectedValues);
-
-    // const selectedItem = document.querySelector('.govuk-radios__input:checked');
-    // const level = selectedItem.value;
-    // filterCourses(level);
+    if (selectedValues.length >4) {
+        loadCourses(data);
+    } else {
+        for (let x of selectedValues) {
+            filterCategory(x);
+        }
+    }
 })
 
 
 printCoursesOnScreen = (title, desc, provider, level, duration) => {
 
+    const courseItem = document.getElementsByClassName('course');
+    const resultsCount = document.getElementsByClassName('results-count')[0];
+
     if(courseList)  {
-       //
+
         const course =`
-            <li class="govuk-body"> 
-            <div class="govuk-!-margin-bottom-1"><span class="govuk-hint">${provider}</span></div>
-            <div class="govuk-!-margin-bottom-1"><h2 class="govuk-heading-m"><a href class="govuk-link">${title}</a></h2></div>
-            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
-            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Study time : </span>${duration}</div>
+            <li class="govuk-body course"> 
+                <div class="govuk-!-margin-bottom-1"><span class="govuk-hint">${provider}</span></div>
+                <div class="govuk-!-margin-bottom-1"><h2 class="govuk-heading-m"><a href class="govuk-link">${title}</a></h2></div>
+                <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
+                <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Study time : </span>${duration}</div>
             </li>
             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--l">`
         courseList.innerHTML += course;
     }
+
+
+
+    resultsCount.innerText= courseItem.length +  " results";
+
 }
 clearCourses = ()=> {
     courseList.innerHTML="";
