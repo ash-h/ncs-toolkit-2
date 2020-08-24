@@ -183,6 +183,10 @@ const categoryFilterButton = document.getElementsByClassName('category-filter-bu
 
 resetButton.addEventListener('click', (e)=>{
     e.preventDefault();
+    const checkboxes = document.getElementsByClassName('govuk-checkboxes__input');
+    for(let x of checkboxes) {
+        x.checked = false;
+    }
     clearCourses();
     loadCourses(data);
 })
