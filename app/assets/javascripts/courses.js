@@ -5,7 +5,7 @@ const data = [
         "Provider": "Good Things Foundation",
         "Duration": "0 to 4 hours",
         "Subject": "Computer essentials",
-        "Certificate of completion": "no",
+        "Certificate": "no",
         "Study type": "self-paced"
     },
     {
@@ -14,7 +14,7 @@ const data = [
         "Provider": "Good Things Foundation",
         "Duration": "0 to 4 hours",
         "Subject": "Computer essentials",
-        "Certificate of completion": "no",
+        "Certificate": "no",
         "Study type": "self-paced"
     },
     {
@@ -23,7 +23,7 @@ const data = [
         "Provider": "Microsoft",
         "Duration": "0 to 4 hours",
         "Subject": "Computer essentials",
-        "Certificate of completion": "no",
+        "Certificate": "no",
         "Study type": "self-paced"
     },
     {
@@ -32,7 +32,7 @@ const data = [
         "Provider": "Lloyds Bank",
         "Duration": "0 to 4 hours",
         "Subject": "Computer essentials",
-        "Certificate of completion": "no",
+        "Certificate": "no",
         "Study type": "self-paced"
     },
     {
@@ -41,7 +41,7 @@ const data = [
         "Provider": "The Open University",
         "Duration": "48 hours",
         "Subject": "Practical maths",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -50,7 +50,7 @@ const data = [
         "Provider": "The Open University",
         "Duration": "8 hours",
         "Subject": "Practical maths \nBusiness and marketing",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -59,7 +59,7 @@ const data = [
         "Provider": "Corndel",
         "Duration": "40 hours",
         "Subject": "Practical maths \nBusiness and marketing",
-        "Certificate of completion": "No",
+        "Certificate": "No",
         "Study type": "self-paced"
     },
     {
@@ -68,7 +68,7 @@ const data = [
         "Provider": "FutureLearn",
         "Duration": "4 hours in total over 2 weeks",
         "Subject": "Workplace essentials",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "set start dates"
     },
     {
@@ -77,7 +77,7 @@ const data = [
         "Provider": "FutureLearn",
         "Duration": "12 hours",
         "Subject": "Workplace essentials",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -86,7 +86,7 @@ const data = [
         "Provider": "FutureLearn",
         "Duration": "4 hours",
         "Subject": "Business and marketing",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -95,7 +95,7 @@ const data = [
         "Provider": "FutureLearn",
         "Duration": "4 hours",
         "Subject": "Workplace essentials",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -104,7 +104,7 @@ const data = [
         "Provider": "FutureLearn",
         "Duration": "2 hours",
         "Subject": "Business and marketing",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -113,7 +113,7 @@ const data = [
         "Provider": "Google Digital Garage",
         "Duration": "40 hours",
         "Subject": "Business and marketing",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -122,16 +122,16 @@ const data = [
         "Provider": "The Open University",
         "Duration": "24 hours",
         "Subject": "Coding and computer science",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
         "Title": "Learn to Code for Data Analysis",
         "Desc": "Learn how to write your own computer programs, one line of code at a time. Find out how to access open data, clean and analyse it, and produce visualisations, and how to present your analyses, privately or publicly. You'll be coding in Python, a widely used programming language across all disciplines.",
         "Provider": "The Open University",
-        "Duration": "1d",
+        "Duration": "24 hours",
         "Subject": "Coding and computer science",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     },
     {
@@ -140,7 +140,7 @@ const data = [
         "Provider": "Cisco Networking Academy",
         "Duration": "70 hours",
         "Subject": "Coding and computer science",
-        "Certificate of completion": "No",
+        "Certificate": "No",
         "Study type": "self-paced"
     },
     {
@@ -149,7 +149,7 @@ const data = [
         "Provider": "The Open University",
         "Duration": "24 hours",
         "Subject": "Coding and computer science",
-        "Certificate of completion": "Yes",
+        "Certificate": "Yes",
         "Study type": "self-paced"
     }
 ]
@@ -158,7 +158,7 @@ const courseList = document.getElementsByClassName('course-list')[0];
 
 loadCourses = (courses) => {
     for(let x of courses) {
-        printCoursesOnScreen(x.Title, x.Desc, x.Provider, x.Level, x.Duration);
+        printCoursesOnScreen(x.Title, x.Desc, x.Provider, x.Level, x.Duration, x.Certificate);
     }
 }
 
@@ -222,7 +222,7 @@ categoryFilterButton.addEventListener('click', (e)=>{
 })
 
 
-printCoursesOnScreen = (title, desc, provider, level, duration) => {
+printCoursesOnScreen = (title, desc, provider, level, duration, certificate) => {
 
     const courseItem = document.getElementsByClassName('course');
     const resultsCount = document.getElementsByClassName('results-count')[0];
@@ -234,6 +234,7 @@ printCoursesOnScreen = (title, desc, provider, level, duration) => {
                 <div class="govuk-!-margin-bottom-1"><span class="govuk-hint">${provider}</span></div>
                 <div class="govuk-!-margin-bottom-1"><h2 class="govuk-heading-m"><a href class="govuk-link">${title}</a></h2></div>
                 <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
+                <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Certificate of completion : </span>${certificate}</div>
                 <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Study time : </span>${duration}</div>
             </li>
             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--l">`
