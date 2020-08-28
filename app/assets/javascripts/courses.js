@@ -253,9 +253,9 @@ const mobileFilterButton = document.getElementsByClassName('mobile-filter-button
 mobileFilterButton.addEventListener('click', (e)=> {
     e.preventDefault();
     mobileFilters.classList.toggle('hide');
-})
+});
 clearCourses = ()=> {
     courseList.innerHTML="";
-}
+};
 loadCourses(data);
 
