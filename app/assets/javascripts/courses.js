@@ -253,6 +253,12 @@ const mobileFilterButton = document.getElementsByClassName('mobile-filter-button
 mobileFilterButton.addEventListener('click', (e)=> {
     e.preventDefault();
     mobileFilters.classList.toggle('hide');
+    let buttonText = e.target;
+    if (buttonText.innerHTML === 'Show filters') {
+        buttonText.innerHTML = 'Hide filters';
+    } else {
+        buttonText.innerHTML = 'Show filters';
+    }
 });
 clearCourses = ()=> {
     courseList.innerHTML="";
