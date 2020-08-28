@@ -246,6 +246,14 @@ printCoursesOnScreen = (title, desc, provider, level, duration, certificate) => 
     resultsCount.innerText= courseItem.length +  " results";
 
 }
+
+const mobileFilters  = document.getElementsByClassName('mobile-filters-container')[0];
+const mobileFilterButton = document.getElementsByClassName('mobile-filter-button')[0];
+
+mobileFilterButton.addEventListener('click', (e)=> {
+    e.preventDefault();
+    mobileFilters.classList.toggle('hide');
+})
 clearCourses = ()=> {
     courseList.innerHTML="";
 }
