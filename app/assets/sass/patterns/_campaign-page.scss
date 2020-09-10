@@ -1,22 +1,39 @@
-.page {
+.page * {
   font-family: "Helvetica Neue",Arial,Sans-Serif;
   font-weight: 300;
 }
 
+.green-section {
+  border-bottom:5px solid #065254;
+  margin-bottom:2em;
+}
+
+.review {
+  border-left: 5px solid black;
+  padding-left:15px;
+  margin-bottom:2em;
+  span {
+  font-family: Georgia;
+  font-style: italic;
+}}
 
 .overlay {
   margin-top:-3em;
-  h2 {
+  h1 {
     background-color: white;
     display:inline-block;
+    font-size: 2.5em;
+    padding:.5em 0;
 
   }
 }
 
 .feature {
+  background-color: #BFEBF4;
   background-image: url("../../public/images/image1.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   min-height:560px;
   height:100%;
   margin-top: -10px;
