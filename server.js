@@ -39,7 +39,7 @@ if (fs.existsSync('./app/v6/routes.js')) {
 
 const app = express()
 const documentationApp = express()
-
+app.use(express.static(__dirname+'/public'));
 if (useV6) {
   console.log('/app/v6/routes.js detected - using v6 compatibility mode')
   v6App = express()
