@@ -1,0 +1,38 @@
+.page {
+  font-family: "Helvetica Neue",Arial,Sans-Serif;
+  font-weight: 300;
+}
+
+
+.overlay {
+  margin-top:-3em;
+  h2 {
+    background-color: white;
+    display:inline-block;
+
+  }
+}
+
+.feature {
+  background-image: url("../../public/images/image1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:560px;
+  height:100%;
+  margin-top: -10px;
+}
+
+
+a.button-dark {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  padding:1em;
+  display: inline-block;
+  margin:1em 0;
+}
+
+blockquote {
+  border-left:5px solid black;
+}
+
