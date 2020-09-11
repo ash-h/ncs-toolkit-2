@@ -39,6 +39,13 @@
   height:100%;
   margin-top: -10px;
   border-bottom: 10px solid #065254;
+
+  &.new{
+    background-image: url("../../public/images/campaign-image.jpg");
+    //min-height:400px;
+    border-bottom: none;
+    background-size: cover;
+  }
 }
 
 
