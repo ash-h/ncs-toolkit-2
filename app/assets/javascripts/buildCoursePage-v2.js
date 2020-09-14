@@ -328,7 +328,7 @@ printCoursesOnScreen = (title, url, desc, provider, level, duration, certificate
                     const course = `
                         <li class="govuk-body  govuk-!-margin-bottom-4 govuk-tag--grey govuk-!-padding-2">
                         
-                            <div class="govuk-!-margin-bottom-1"><span class="govuk-hint">${provider}</span></div>
+                            <div class="govuk-!-margin-bottom-1"><span >${provider}</span></div>
                             <div class="govuk-!-margin-bottom-1 course-desc"><h2 class="govuk-heading-s"><a href="${url}" class="govuk-link">${title}</a></h2></div>
                             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--m">
                             <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
