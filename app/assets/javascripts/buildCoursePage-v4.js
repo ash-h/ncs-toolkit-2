@@ -1077,7 +1077,7 @@ printCoursesOnScreen = (title, url, desc, provider, level, type, certificate, bu
                             <div class="govuk-!-margin-bottom-1"><span >${provider}</span></div>
                             <div class="govuk-!-margin-bottom-1 course-desc"><h2 class="govuk-heading-s"><a href="${url}" class="govuk-link">${title}</a></h2></div>
                             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--m">
-                            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
+                            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold"></span>${desc}</div>
                             <br>
                             <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold"></span>${lead}</div>
                             ${ctest(bullets)}
