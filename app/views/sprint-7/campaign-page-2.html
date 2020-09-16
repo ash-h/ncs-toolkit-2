@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Skills toolkit 2
+{% endblock %}
+
+
+
+{% block main %}
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+<!--<img src="../../public/images/image1.png">-->
+<div class="feature new"></div>
+<div class="govuk-width-container page">
+    <div class="banner">
+        <!--      <div class="banner-image">-->
+        <!--        <img src="https://theskillstoolkit.campaign.gov.uk/wp-content/uploads/sites/99/2020/05/the-skills-toolkit-banner-2.jpg" class="attachment-full size-full" alt="Men working on laptop" loading="lazy" srcset="https://theskillstoolkit.campaign.gov.uk/wp-content/uploads/sites/99/2020/05/the-skills-toolkit-banner-2.jpg 1600w, https://theskillstoolkit.campaign.gov.uk/wp-content/uploads/sites/99/2020/05/the-skills-toolkit-banner-2-768x315.jpg 768w, https://theskillstoolkit.campaign.gov.uk/wp-content/uploads/sites/99/2020/05/the-skills-toolkit-banner-2-1536x631.jpg 1536w, https://theskillstoolkit.campaign.gov.uk/wp-content/uploads/sites/99/2020/05/the-skills-toolkit-banner-2-280x115.jpg 280w" sizes="(max-width: 1600px) 100vw, 1600px">    </div>-->
+        <!--      <div class="row">-->
+        <article class="overlay">
+            <h1>The Skills Toolkit</h1>
+            <div class="content rich-text">
+                <p>Free digital and numeracy courses to build your skills.</p>
+            </div>
+        </article>
+    </div>
+  <section class="content-blocks ">
+
+      <p>Learn new skills, such as:</p>
+      <ul class="govuk-list govuk-list--bullet">
+          <li>Computer essentials</li>
+          <li>Coding and computer science</li>
+          <li>Everyday numeracy</li>
+          <li>Business and marketing</li>
+          <li>Workplace essentials</li>
+      </ul>
+
+      <div class="buttons">
+          <a href="courses" class="button button-dark" onclick="ga('send', 'event', 'Button Clicked', this.href, 'Explore free online courses');">Explore free online courses</a>
+      </div>
+
+      <section class="green-section">
+          <h2>Something for everyone</h2>
+          <h3>
+              I struggle with computers
+          </h3>
+          <p>82% of jobs now require digital skills of some kind.</p>
+          <p>
+              Simply learning how to use a computer can open up a whole range of
+              opportunities. The Skills Toolkit can help you do this. Some of our
+              computer essentials resources can be completed in a matter of
+              minutes.
+          </p>
+
+          <h3>I am confident with computers </h3>
+          <p>Roles requiring digital skills pay 29% more than those that don’t.</p>
+          <p>
+
+              With The Skills Toolkit you can learn a range of in-demand digital skills.
+              Such as Data Analysis, Artificial Intelligence or User Experience design,
+              all of which are in LinkedIn’s top 5 most in-demand hard skills.
+          </p>
+      </section>
+      <section class="green-section">
+          <h2>User reviews </h2>
+
+          <h3>What people have said about courses from The Skills Toolkit. </h3>
+          <div class="review">
+          <p>“I would recommend this course to everybody starting out in IT.”</p>
+
+          <span>    - OpenLearn learner, on ‘Introduction to Cyber Security’</span>
+
+          </div>
+          <div class="review">
+              <p>“Bite-size learning is brilliant.”</p>
+
+              <span>- FutureLearn learner, on ‘Learn About Current Digital Workplace Trends’</span>
+
+          </div>
+          <div class="review">
+              <p>“[It] showed me the personal and professional uses of digital,
+                  that I hadn’t considered before. It’s helped me get the
+                  apprenticeship I wanted.”</p>
+
+              <span>- Learn for Life learner </span>
+
+          </div>
+      </section>
+
+
+
+
+
+  </section>
+</div>
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,180 @@
+
+{% extends "layout_ncs.html" %}
+
+{% block pageTitle %}
+Skills toolkit 2
+{% endblock %}
+
+
+
+{% block main %}
+{% block beforeContent %}
+<div class="govuk-width-container ">
+  <div class="govuk-phase-banner"><p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta
+  </strong>
+    <span class="govuk-phase-banner__text">Complete <a target="_blank" class="govuk-link" href="https://surveys.ipsosinteractive.com/mrIWeb/mrIWeb.dll?I.Project=S1039833&amp;id=&amp;cf=ovl ">Ipsos MORI survey</a> to give us your feedback about the service.</span>
+  </p></div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-margin-top-6">
+      <h1 class="govuk-heading-xl">The Skills Toolkit</h1>
+      <p>Free online resources to improve math, digital and workplace skills.</p>
+    </div>
+  </div>
+ <div class="govuk-grid-row govuk-!-margin-top-6">
+    <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-6 ">
+      <div class="mobile-only">
+        <div class="hide mobile-filters-container govuk-!-margin-bottom-6">
+          <div class="  mobile-filters filters filters">
+            <div class="filters-container">
+              <div class="filter-label">
+                <h2 class="govuk-heading-s govuk-!-margin-0">Subject</h2>
+              </div>
+              <div class="filter-box conditional-box">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+
+                    <div class="govuk-checkboxes govuk-checkboxes--small">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="category" name="category" type="checkbox" value="Practical maths">
+                        <label class="govuk-label govuk-checkboxes__label" for="category">
+                          Practical maths
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="category-2" name="organisation-2" type="checkbox" value="Computer essentials">
+                        <label class="govuk-label govuk-checkboxes__label" for="category-2">
+                          Computer essentials
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="category-3" name="category-3" type="checkbox" value="Workplace essentials">
+                        <label class="govuk-label govuk-checkboxes__label" for="category-3">
+                          Workplace essentials
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="category-4" name="category-4" type="checkbox" value="Coding and computer science">
+                        <label class="govuk-label govuk-checkboxes__label" for="category-4">
+                          IT & computer science
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="category-5" name="category-5" type="checkbox" value="Business and marketing">
+                        <label class="govuk-label govuk-checkboxes__label" for="category-5">
+                          Business and marketing
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="govuk-button  category-filter-button ">Filter results</a>
+          <a href="" class="govuk-link reset-button  ">Clear filters</a>
+        </div>
+        <a href="" class="govuk-button mobile-filter-button govuk-button--secondary">Show filters</a>
+      </div>
+      <div class="desktop-only">
+      <div class="filters filters">
+      <div class="filters-container">
+        <div class="filter-label">
+          <h2 class="govuk-heading-s govuk-!-margin-0">Subject</h2>
+        </div>
+        <div class="filter-box conditional-box">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+
+              <div class="govuk-checkboxes govuk-checkboxes--small">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="category" name="category" type="checkbox" value="Practical maths">
+                  <label class="govuk-label govuk-checkboxes__label" for="category">
+                    Practical maths
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="category-2" name="organisation-2" type="checkbox" value="Computer essentials">
+                  <label class="govuk-label govuk-checkboxes__label" for="category-2">
+                    Computer essentials
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="category-3" name="category-3" type="checkbox" value="Workplace essentials">
+                  <label class="govuk-label govuk-checkboxes__label" for="category-3">
+                    Workplace essentials
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="category-4" name="category-4" type="checkbox" value="Coding and computer science">
+                  <label class="govuk-label govuk-checkboxes__label" for="category-4">
+                    IT & computer science
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="category-5" name="category-5" type="checkbox" value="Business and marketing">
+                  <label class="govuk-label govuk-checkboxes__label" for="category-5">
+                    Business and marketing
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      </div>
+      <a href="" class="govuk-button category-filter-button">Update results</a>
+
+      <br class="govuk-!-margin-bottom-4">
+      <a href="" class="govuk-link reset-button  ">Clear filters</a>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <span class="govuk-heading-m results-count">XX 0f XX resources</span>
+      <ul class="course-list govuk-list">
+
+      </ul>
+    </div>
+    <div class="govuk-grid-column-one-quarter">
+
+        <div>
+          <div class="sfContentBlock sf-Long-text"><div class="app-related-items">
+            <h2 class="govuk-heading-m">Support during Covid-19</h2>
+            <ul class="govuk-list">
+              <li><a class="govuk-link" href="/get-a-job/advice-for-furloughed-workers">Advice for furloughed workers</a></li>
+              <li><a class="govuk-link" href="/get-a-job/advice-for-if-you-lose-your-job">Advice for if you lose your job</a></li>
+            </ul>
+          </div></div>
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text"><div class="govuk-!-margin-top-7"><h2 class="govuk-heading-m">Other opportunities</h2><ul class="govuk-list"><li><a class="govuk-link" href="/find-a-course/search">Search other courses </a></li><li><a class="govuk-link" href="/find-a-course/where-to-find-free-online-learning">Where to find other online learning</a></li><li><a class="govuk-link" href="/find-a-course/ways-to-develop-skills">Other ways to develop skills</a></li></ul></div></div>
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text"><div class="govuk-!-margin-top-7"><h2 class="govuk-heading-m">Skills assessment</h2><p class="govuk-body"><a href="/skills-assessment" class="govuk-link">Take an assessment</a> to learn more about your skills and the careers that might suit you.</p></div></div>
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text"><div>
+            <h2 class="govuk-heading-m">Want to speak to an adviser?</h2>
+            <p class="govuk-body-m" style="margin-bottom:0px;"><span class="govuk-body govuk-!-font-weight-bold">Call</span> 0800 100 900 or <a class="govuk-link" href="/webchat/chat" rel="external" target="'_blank'">use webchat</a></p>
+            <p class="govuk-caption-m">8am to 10pm, 7 days a week</p>
+          </div></div>
+        </div>
+        <div>
+          <div class="sfContentBlock sf-Long-text"></div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% endblock %}
+
+{% block scripts %}
+<script src="../../public/javascripts/courses2.js"></script>
+{% endblock %}
