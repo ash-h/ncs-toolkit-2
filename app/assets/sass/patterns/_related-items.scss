@@ -1,6 +1,12 @@
 // This is a GOV.UK Publishing specific component that
 // can be seen at http://govuk-static.herokuapp.com/component-guide/related_items
+.govuk-header__link--service-name {
+  margin-bottom: -1px;
+}
 
+.govuk-header__navigation {
+  margin: 0px 0px 4px;
+}
 .app-related-items {
   border-top: 2px solid govuk-colour("blue");
   padding-top: govuk-spacing(2);

@@ -1026,7 +1026,7 @@ createTitles = (category, classList, description) => {
         <div class="govuk-accordion__section">
        <div class="govuk-accordion__section-header">
          <h2 class="govuk-accordion__section-heading">
-           <button type="button" id="accordion-with-summary-sections-heading-1" aria-controls="accordion-with-summary-sections-content-1" class="govuk-accordion__section-button" aria-describedby="accordion-with-summary-sections-summary-1" aria-expanded="false">
+           <button type="button" id="accordion-with-summary-sections-heading-1" aria-controls="accordion-with-summary-sections-content-1" class="govuk-accordion__section-button link-colour" aria-describedby="accordion-with-summary-sections-summary-1" aria-expanded="false">
              ${category}
              <span class="govuk-accordion__icon" aria-hidden="true"></span></button></h2>
          <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
