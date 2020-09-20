@@ -21,25 +21,39 @@ Skills toolkit 2
 
 <div class="govuk-width-container">
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full govuk-!-margin-top-6">
-      <div class="breadcrumbs govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/">Home</a></li>
-          <li class="govuk-breadcrumbs__list-item">                        <a class="govuk-breadcrumbs__link" href="find-a-course-page.html">Find a course</a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item">The Skills Toolkit                </li>
-        </ol>
-      </div>
+    <div class="govuk-grid-column-full">
+        <div class="breadcrumbs govuk-breadcrumbs">
+            <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/">Home</a></li>
+                <li class="govuk-breadcrumbs__list-item">                        <a class="govuk-breadcrumbs__link" href="find-a-course-page.html">Find a course</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item">The Skills Toolkit                </li>
+            </ol>
+        </div>
     </div>
   </div>
  <div class="govuk-grid-row govuk-!-margin-top-6">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">The Skills Toolkit</h1>
       <p class="govuk-body">Free online resources to improve math, digital and workplace skills.</p>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Why are these course fee?
+    </span>
+        </summary>
+        <div class="govuk-details__text">
+          All providers have agreed to make their courses available freely through The Skills Toolkit in response to COVID-19.”
+        </div>
+      </details>
       <div class="govuk-accordion tstaccordions" data-module="govuk-accordion" id="accordion-with-summary-sections" >
 
 
       </div>
+
+      <p>
+        This website, including use of any content uploaded or linked through it, is subject to a <a href="https://nationalcareers.service.gov.uk/find-a-course/the-skills-toolkit-legal-disclaimer">disclaimer</a>. Please read this before using The Skills Toolkit.
+      </p>
     </div>
     <div class="govuk-grid-column-one-third">
       <div>
@@ -74,7 +88,7 @@ Skills toolkit 2
 {% endblock %}
 
 {% block pageScripts %}
-<script src="../../public/javascripts/buildCoursePage-v5.js"></script>
+<script src="../../public/javascripts/buildCoursePage-v6.js"></script>
 {% endblock %}
 
 
