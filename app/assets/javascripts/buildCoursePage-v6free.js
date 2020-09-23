@@ -1,42 +1,42 @@
 const categoryData = [
     {
         "Category": "Practical maths",
-        "Desc": "Learn fractions, decimals and other math skills for work and everyday life. 2 courses.",
+        "Desc": "2 courses to help with fractions, decimals and other maths skills for work and everyday life",
         "Class": "maths"
     },
     {
         "Category": "Computer essentials",
-        "Desc": "Learn to use a computer, the internet and office programs like spreadsheet and word processors. 5 courses. ",
+        "Desc": "5 courses to help you use a computer, the internet and office programs like spreadsheets and word processors. ",
         "Class": "computerEssentials"
     },
     {
         "Category": "Personal growth and wellbeing",
-        "Desc": "Decision making, growth mindset, deal with stress, resilience. 6 courses. ",
+        "Desc": "6 courses to help with decision making, your mindset, dealing with stress and resilience.",
         "Class": "personal"
     },
     {
         "Category": "Professional development",
-        "Desc": "Interpersonal skills, professional online presence, leadership, collaboration. 8 courses.",
+        "Desc": "8 courses to help with interpersonal skills, your professional online presence, leadership and collaboration. ",
         "Class": "professional"
     },
     {
         "Category": "Business and finance",
-        "Desc": "Project and business management, bookkeeping and organisational financial management. 6 courses.",
+        "Desc": "6 courses including project and business management, bookkeeping and sales.",
         "Class": "business"
     },
     {
         "Category": "Digital design and marketing",
-        "Desc": "User experience (UX) design, graphic design, mobile apps, accessibility. 9 courses. ",
+        "Desc": "9 courses including user experience design (UX), graphic design, app design and social media. ",
         "Class": "design"
     },
     {
         "Category": "Computer science",
-        "Desc": "Cybersecurity, computer networks, artificial intelligence (AI), cloud computing. 15 courses.",
+        "Desc": "15 courses including cybersecurity, computer networks, artificial intelligence (AI) and cloud computing.",
         "Class": "computerScience"
     },
     {
         "Category": "Coding",
-        "Desc": "Intro to coding, HTML, CSS, Python, C, C++. 8 courses.",
+        "Desc": "8 courses including HTML, CSS, Python, C, C++.",
         "Class": "coding"
     }
 ]
