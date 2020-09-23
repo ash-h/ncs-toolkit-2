@@ -103,7 +103,7 @@ const data = [
     },
     {
         "Title": "Everyday Maths",
-        "Url": "https://govuk-ncs-toolkit-2.herokuapp.com/sprint-3/accordion-courses-2",
+        "Url": "https://www.open.edu/openlearn/money-business/introduction-bookkeeping-and-accounting/content-section-0?utm_source=ncs&utm_campaign=ol&utm_medium=bookkeeping",
         "Desc": "Maths skills to help with work and everyday life.",
         "Provider": "The Open University",
         "Level": "",
@@ -1072,12 +1072,12 @@ printCoursesOnScreen = (title, url, desc, provider, level, type, certificate, bu
             classList.forEach((i) => {
                 if (x.classList.contains(i)) {
                     const course = `
-                        <li class="govuk-body  govuk-!-margin-bottom-4  govuk-tag--grey govuk-!-padding-2">
+                        <li class="govuk-body  govuk-!-margin-bottom-4  course govuk-!-padding-2">
                         
                             <div class="govuk-!-margin-bottom-1"><span >${provider}</span></div>
                             <div class="govuk-!-margin-bottom-1 course-desc"><h2 class="govuk-heading-s"><a href="${url}" class="govuk-link">${title}</a></h2></div>
                             <hr class=" govuk-section-break govuk-section-break--visible govuk-section-break--m">
-                            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold">Description : </span>${desc}</div>
+                            <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold"></span>${desc}</div>
                             <br>
                             <div class="govuk-!-margin-bottom-1"><span class="govuk-!-font-weight-bold"></span>${lead}</div>
                             ${ctest(bullets)}
